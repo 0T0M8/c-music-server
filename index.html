@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <h1>Welcome to Music Server</h1>
+  <input type="file" id="fileInput" />
+  <button onclick="uploadFile()">Upload</button>
+  <div class="playlist" id="playlist">
+    <h2>Playlist</h2>
+    <div class="song">
+      <p>Sample Song 1</p>
+      <audio controls src="/uploads/sample1.mp3"></audio><br>
+      <a href="#" onclick="alert('Downloading sample1.mp3')">Download</a>
+    </div>
+    <div class="song">
+      <p>Sample Song 2</p>
+      <audio controls src="/uploads/sample2.mp3"></audio><br>
+      <a href="#" onclick="alert('Downloading sample2.mp3')">Download</a>
+    </div>
+  </div>
+</body>
+</html>
